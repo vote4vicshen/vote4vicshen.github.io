@@ -1,0 +1,51 @@
+.leenk,
+.nav-link {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+img {
+
+	max-width: 100%;
+	height: auto;
+	border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+	img {
+		max-width: 50%;
+	}
+}
+
+.leenk:hover,
+.nav-link:hover {
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+	transition: text-decoration 0.5s ease;
+}
+
+.rainbow-title {
+	font-weight: bold;
+	background: linear-gradient(90deg, #ff3366, #ff9933, #33cc33, #3399ff, #cc33ff, #ff3366);
+	background-size: 400%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	animation: gradientFlow 5s linear infinite;
+	text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+@keyframes gradientFlow {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
